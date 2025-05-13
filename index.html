@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Alberto y Ana</title>
+
+    <link rel="icon" type="image/ico" href="img/icono.ico" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#707f62">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--mi CSS-->
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body class="text-white bg-white">
+
+    <header class="container px-0">
+        <nav class="navbar navbar-expand-md p-3">
+            <div class="container-fluid justify-content-center gap-4">
+                <a class="navbar-brand text-decoration-underline text-white marron fw-bold" href="./index.html">
+                    ¡BIENVENIDOS!
+                </a>
+                <a class="navbar-brand text-white marron fw-bold" aria-current="page" href="./itinerarioboda.html">
+                    ITINERARIO
+                </a>
+            </div>
+        </nav>
+
+        <div class="card border-0">
+            <img src="./img/besoRT.png" class="card-img rounded-0" alt="foto beso">
+            <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center text-center">
+                <h1 class="h1 cinzel-decorative dorado fw-bold">¡Nos casamos!</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container px-0 pt-3">
+        <section class="text-center">
+            <div class="card rounded-0 border-0 bg-transparent">
+                <div class="card-body">
+                    <img src="./img/logo_anaSInBorde.png" class="img-fluid" alt="logo" style="max-height: 400px;">
+                    <h2>
+                        <p class="mb-0 verde h2 pt-3">Sábado, 6 de septiembre de 2025</p>
+                        <p></p>
+                    </h2>
+                    <i class="material-icons py-2 dorado">church</i>
+                    <h2 class="mt-2 cinzel-decorative dorado h2">Parroquia San Francisco Javier</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <div class="card rounded-0 border-0 pb-5 bg-transparent">
+                <div class="card-body px-4 px-md-5">
+                    <h3 class="mb-4 cinzel verde fw-bold">¡Bienvenidos a nuestra boda!</h3>
+                    <div class="pt-3 mx-auto verde fw-bold cinzel marco">
+                        <p>¡Que sí! Que nos casamos!!!</p>
+                        <p>
+                            Estamos viviendo un momento lleno de ilusión y queremos compartirlo con todos vosotros. Nos
+                            sentimos en las nubes y deseamos que forméis parte de este capítulo tan importante de
+                            nuestra historia.
+                        </p>
+                        <p>
+                            Por eso estamos preparando una boda que esperamos recordéis con una gran sonrisa, llena de
+                            emoción, alegría y momentos inolvidables.
+                        </p>
+                        <p>
+                            Con muchísimo cariño hemos creado esta web para acercaros un poquito más a nosotros, y para
+                            que podáis seguir cada paso que vayamos dando en la organización. Aquí iremos actualizando
+                            todos los detalles y compartiendo trocitos de nuestra historia.
+                        </p>
+                        <p>
+                            Y algo muy importante: <span class="text-danger fw-bold">confirmad vuestra asistencia</span>
+                            lo antes posible. Nos ayudará muchísimo a organizarlo todo con más facilidad.
+                        </p>
+                        <p>
+                            ¡Gracias por acompañarnos! Esperamos que disfrutéis de esta web tanto como nosotros
+                            disfrutamos preparándola... y sobre todo, ¡que nos veamos muy pronto! ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-2">Con cariño, Alberto & Ana ❤️ </p>
+        <div class="d-flex flex-column flex-md-row justify-content-around gap-2 px-3">
+            <span>
+                Teléfonos:
+                <a href="tel:+34635507429" class="text-white text-decoration-underline">635 50 74 29</a> /
+                <a href="tel:+34686201512" class="text-white text-decoration-underline">686 20 15 12</a>
+            </span>
+            <span>
+                <a href="mailto: bodaalbertoana3.9.2024@gmail.com" target="_blank" rel="noreferrer"
+                    class="text-white text-decoration-underline">
+                    bodaalbertoana3.9.2025@gmail.com
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log('SW registrado', reg))
+                .catch(err => console.error('SW fallo', err));
+        }
+    </script>
+</body>
+
+</html>

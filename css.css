@@ -1,0 +1,46 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.mapa iframe {
+    border-radius: 12px;
+}
+
+a:hover {
+    color: #c3ad6f !important;
+}
+
+
+
+body {
+    background-image: url('./img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.cinzel-decorative {
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.dorado {
+    color: #c3ad6f !important;
+}
+
+.verde {
+    color: #707f62 !important;
+}
+
+.marron {
+    color: #4d443b !important;
+}
+
+.marco {
+    max-width: 700px;
+    padding: 0 1rem;
+}

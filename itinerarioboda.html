@@ -47,7 +47,49 @@
         </div>
     </header>
 
-    <main class="container px-0 pt-3">
+    <main class="container px-0">
+        <!--  NAVBAR -->
+        <nav class="navbar navbar-expand-xl navbar-light bg-transparent border-bottom border-warning py-3">
+            <div class="container">
+                <button class="navbar-toggler w-100 border-0 text-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fw-bold text-uppercase py-2 dorado">
+                        ☰
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav mx-auto text-center text-xl-start">
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#alergias">Alergias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#transporte">Transporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#musica">Música</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#fotografo">fotógrafo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#novio">El Novio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#novia">La Novia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#ceremonia">Ceremonia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#convite">Convite</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- actualizacion -->
         <section class="text-center">
             <div class="card rounded-0 border-0 bg-transparent">
@@ -63,7 +105,7 @@
             </div>
         </section>
         <!-- alergias -->
-        <section>
+        <section id="alergias">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
                     <h3 class="mb-4 cinzel dorado text-center">Alergias alimentarias</h3>
@@ -83,7 +125,7 @@
             </div>
         </section>
         <!-- autobuses -->
-        <section>
+        <section id="transporte">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
                     <h3 class="mb-4 cinzel dorado text-center">Transporte</h3>
@@ -109,7 +151,7 @@
             </div>
         </section>
         <!-- canciones -->
-        <section>
+        <section id="musica">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
                     <h3 class="mb-4 cinzel dorado text-center">Música</h3>
@@ -130,7 +172,7 @@
             </div>
         </section>
         <!-- fotografo -->
-        <section>
+        <section id="fotografo">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
                     <h3 class="mb-4 cinzel dorado text-center">Fotógrafo</h3>
@@ -164,7 +206,7 @@
             </div>
         </section>
         <!-- novio -->
-        <section>
+        <section id="novio">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
                     <h3 class="mb-4 cinzel dorado text-center">Salida del Novio</h3>
@@ -189,7 +231,7 @@
             </div>
         </section>
         <!-- novia -->
-        <section>
+        <section id="novia">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
                     <h3 class="mb-4 cinzel dorado text-center">Salida de la Novia</h3>
@@ -218,7 +260,7 @@
             </div>
         </section>
         <!-- ceremonai -->
-        <section>
+        <section id="ceremonia">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
                     <h3 class="mb-4 cinzel dorado text-center">La ceremonia</h3>
@@ -233,9 +275,14 @@
                                 <div class="ratio ratio-16x9">
                                     <iframe
                                         src="https://maps.google.com/maps?q=En+la+parroquia+cat%C3%B3lica+San+Francisco+Javier%2C+Jaraguas&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                        loading="lazy">
+                                        target="_blank" class="text-decoration-none dorado" loading="lazy">
                                     </iframe>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <img src="./img/iglesia.jpg" class="card-img" alt="foto iglesia">
                             </div>
                         </div>
                         <p>
@@ -264,7 +311,7 @@
             </div>
         </section>
         <!-- convite -->
-        <section>
+        <section id="convite">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
                     <h3 class="mb-4 cinzel dorado text-center">El convite</h3>
@@ -284,9 +331,17 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <img src="./img/conde.jpg" class="card-img" alt="foto bodega">
+                            </div>
+                        </div>
                         <p>
                             Dominio de la Vega es una bodega rodeada de naturaleza y del alma que encierran los grandes
                             vinos, celebraremos nuestra unión en este entorno tan especial, en San Antonio de Requena.
+                            <br><br>
+                            👉 <a href="https://garzaran.com/" class="text-decoration-none verde">La elaboración del
+                                menú correrá a cargo de Garzaran.</a>
                         </p>
                         <p>
                             <i class="material-icons pe-2 dorado">nightlife</i>
@@ -304,42 +359,21 @@
         </section>
         <!-- extra -->
         <section>
-            <div class="card rounded-0 border-0 bg-transparent">
+            <div class="card rounded-0 border-0 bg-transparent mb-5">
                 <div class="card-body px-4 px-md-5">
                     <h3 class="mb-4 cinzel dorado text-center">Gracias por asistir</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
-                            Deseamos q lo paséis en grande, es un día de amor y felicidad que hemos preparado con mucha
-                            ilusión.
-                            No queremos enfados entre invitad@s, ni peleas ni gritos.. Que todos los gritos que haya
-                            sean de diversión 😊.
-
-                            El 6 de septiembre de 2025, va a ser el día de los novios pero también de los familiares y
-                            amig@s que nos acompañáis porque vosotr@s también formáis parte de nuestra vida ❤️.
+                            Deseamos que lo paséis en grande, es un día de amor y felicidad que hemos preparado con
+                            mucha
+                            ilusión; que los únicos gritos que se escuchen sean de alegría, brindis y carcajadas.
+                            </br></br>
+                            Gracias por acompañarnos en este capítulo tan especial de nuestra historia. ❤️
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- ayudar -->
-        <section>
-            <div class="card rounded-0 border-0 bg-transparent mb-3">
-                <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">¿Quereis ayudarnos con la boda?</h3>
-                    <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
-                        <p>
-                            Lo más importante es compartir este día con vosotros, pero si queréis ayudarnos a construir
-                            nuestro futuro juntos, podéis hacerlo aquí.
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-piggy-bank pe-2 dorado"></i>
-                            ES82 2100 7000 9302 0011 2504
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <footer class="bg-dark text-white text-center py-4 bg-verde">

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css.css">
 </head>
 
-<body class="text-white bg-white">
+<body class="text-white bg-white" id="inicio">
 
     <header class="container px-0">
         <nav class="navbar navbar-expand-md p-3">
@@ -49,17 +49,20 @@
 
     <main class="container px-0">
         <!--  NAVBAR -->
-        <nav class="navbar navbar-expand-xl navbar-light bg-transparent border-bottom border-warning py-3">
+        <nav class="navbar navbar-expand-xxl navbar-light bg-transparent border-bottom border-warning py-3">
             <div class="container">
-                <button class="navbar-toggler w-100 border-0 text-center" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler w-100 border-0 text-center p-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="fw-bold text-uppercase py-2 dorado">
-                        ☰
+                    <span class="fw-bold text-uppercase verde fs-5 nav-link">
+                        <a class="indice dorado">Índice</a>
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav mx-auto text-center text-xl-start">
+                    <ul class="navbar-nav mx-auto text-center text-xxl-start">
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#asistencia">Asistencia</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#alergias">Alergias</a>
                         </li>
@@ -90,25 +93,51 @@
                 </div>
             </div>
         </nav>
+        <!-- Botón subir al inicio -->
+        <a href="#inicio" class="btn btn-outline-success rounded-circle shadow position-fixed"
+            style="bottom: 10px; right: 10px; width: auto; height: auto; z-index: 1000;">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
         <!-- actualizacion -->
         <section class="text-center">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
-                    <h2 class="mt-2 cinzel-decorative verde">Itinerario de la boda</h2>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco">
-                        <p>
+                        <h3>
                             <span class="dorado">Iremos actualizando esta web</span> con todo lo que preparemos y
                             resolvamos, para que podáis acompañarnos en cada paso de esta hermosa aventura.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- asistencia -->
+        <section id="asistencia" class="mt-3">
+            <div class="card rounded-0 border-0 bg-transparent">
+                <div class="card-body px-4 px-md-5">
+                    <h3 class="cinzel dorado text-center">Asitencia</h3>
+                    <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
+                        <p>
+                            <i class="fa-solid fa-clipboard-check pe-2 dorado"></i>
+                            Si lo prefieres, no es necesario rellenar el formulario de asistencia. También puedes
+                            confirmarnos tu presencia por WhatsApp, en persona o de la manera que te resulte más cómoda.
+                            ¡Lo importante es saber que contarás con nosotros ese día tan especial!
+                        </p>
+                        <p>
+                            <a href="https://forms.gle/NxHh5DopE7teWhnKA" target="_blank"
+                                class="text-decoration-none verde">
+                                👉 Completa aquí el formulario de asistencia
+                            </a>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- alergias -->
-        <section id="alergias">
+        <section id="alergias" class="mt-3">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">Alergias alimentarias</h3>
+                    <h3 class="cinzel dorado text-center">Alergias alimentarias</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
                             <i class="fa-solid fa-shrimp pe-2 dorado"></i>
@@ -125,10 +154,10 @@
             </div>
         </section>
         <!-- autobuses -->
-        <section id="transporte">
+        <section id="transporte" class="mt-3">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">Transporte</h3>
+                    <h3 class="cinzel dorado text-center">Transporte</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
                             <i class="fa-solid fa-bus pe-2 dorado"></i>
@@ -151,10 +180,10 @@
             </div>
         </section>
         <!-- canciones -->
-        <section id="musica">
+        <section id="musica" class="mt-3">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">Música</h3>
+                    <h3 class="cinzel dorado text-center">Música</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
                             <i class="fa-solid fa-music pe-2 dorado"></i>
@@ -172,10 +201,10 @@
             </div>
         </section>
         <!-- fotografo -->
-        <section id="fotografo">
+        <section id="fotografo" class="mt-3">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">Fotógrafo</h3>
+                    <h3 class="cinzel dorado text-center">Fotógrafo</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
                             <i class="fa-solid fa-camera pe-2 dorado"></i>
@@ -206,10 +235,10 @@
             </div>
         </section>
         <!-- novio -->
-        <section id="novio">
+        <section id="novio" class="mt-3">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">Salida del Novio</h3>
+                    <h3 class="cinzel dorado text-center">Salida del Novio</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
                             <span class="material-icons pe-1 dorado">man</span>
@@ -231,10 +260,10 @@
             </div>
         </section>
         <!-- novia -->
-        <section id="novia">
+        <section id="novia" class="mt-3">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">Salida de la Novia</h3>
+                    <h3 class="cinzel dorado text-center">Salida de la Novia</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
                             <span class="material-icons dorado">woman</span>
@@ -260,10 +289,10 @@
             </div>
         </section>
         <!-- ceremonai -->
-        <section id="ceremonia">
+        <section id="ceremonia" class="mt-3">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">La ceremonia</h3>
+                    <h3 class="cinzel dorado text-center">La ceremonia</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
                             <i class="material-icons pe-2 dorado">church</i>
@@ -311,10 +340,10 @@
             </div>
         </section>
         <!-- convite -->
-        <section id="convite">
+        <section id="convite" class="mt-3">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">El convite</h3>
+                    <h3 class="cinzel dorado text-center">El convite</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
                             <i class="fa-solid fa-hotel pe-2 dorado"></i>
@@ -358,10 +387,10 @@
             </div>
         </section>
         <!-- extra -->
-        <section>
+        <section class="mt-3">
             <div class="card rounded-0 border-0 bg-transparent mb-5">
                 <div class="card-body px-4 px-md-5">
-                    <h3 class="mb-4 cinzel dorado text-center">Gracias por asistir</h3>
+                    <h3 class="cinzel dorado text-center">Gracias por asistir</h3>
                     <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
                         <p>
                             Deseamos que lo paséis en grande, es un día de amor y felicidad que hemos preparado con

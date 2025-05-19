@@ -1,12 +1,10 @@
 const CACHE_NAME = 'boda-v1';
 const urlsToCache = [
     '/',
-    '/index.html',
     '/img/logo_anaSInBorde.png',
     '/img/besoRT.png',
     '/img/fondo.jpg',
     '/img/icono.ico',
-    '/css.css',
     '/sw.js',
     '/manifest.json',
 ];

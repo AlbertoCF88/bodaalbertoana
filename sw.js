@@ -4,12 +4,14 @@ const urlsToCache = [
     '/img/logo_anaSInBorde.png',
     '/img/besoRT.png',
     '/img/fondo.jpg',
+    '/img/iglesia.jpg',
+    '/img/conde.jpg',
     '/img/icono.ico',
-    '/sw.js',
     '/manifest.json',
 ];
 
 self.addEventListener('install', function (event) {
+    self.skipWaiting(); // Activa inmediatamente el nuevo SW
     event.waitUntil(
         caches.open(CACHE_NAME).then(function (cache) {
             return cache.addAll(urlsToCache);
@@ -37,6 +39,6 @@ self.addEventListener('activate', function (event) {
                     }
                 })
             );
-        })
+        }).then(() => self.clients.claim()) 
     );
 });

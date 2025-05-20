@@ -7,6 +7,9 @@ const urlsToCache = [
     '/img/iglesia.jpg',
     '/img/conde.jpg',
     '/img/icono.ico',
+    '/img/ana.jfif',
+    '/img/alberto.jfif',
+    '/img/icono.ico',
     '/manifest.json',
 ];
 
@@ -39,6 +42,6 @@ self.addEventListener('activate', function (event) {
                     }
                 })
             );
-        }).then(() => self.clients.claim()) 
+        }).then(() => self.clients.claim())
     );
 });

@@ -1,5 +1,6 @@
-const CACHE_NAME = 'boda-v3';
+const CACHE_NAME = 'boda-v4';
 const urlsToCache = [
+    '/index.html',
     '/img/logo_anaSInBorde.png',
     '/img/besoRT.png',
     '/img/fondo.jpg',
@@ -8,39 +9,50 @@ const urlsToCache = [
     '/img/icono.ico',
     '/img/ana.jfif',
     '/img/alberto.jfif',
-    '/img/icono.ico',
+    '/img/construccion.png',
     '/manifest.json',
 ];
 
-self.addEventListener('install', function (event) {
-    self.skipWaiting(); // Activa inmediatamente el nuevo SW
+self.addEventListener('install', event => {
+    self.skipWaiting();
     event.waitUntil(
-        caches.open(CACHE_NAME).then(function (cache) {
-            return cache.addAll(urlsToCache);
-        })
+        caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache))
     );
 });
 
-self.addEventListener('fetch', function (event) {
-    event.respondWith(
-        caches.match(event.request)
-            .then(function (response) {
-                return response || fetch(event.request);
-            })
-    );
-});
-
-self.addEventListener('activate', function (event) {
+self.addEventListener('activate', event => {
     const cacheWhitelist = [CACHE_NAME];
     event.waitUntil(
-        caches.keys().then(function (cacheNames) {
-            return Promise.all(
-                cacheNames.map(function (cacheName) {
+        caches.keys().then(cacheNames =>
+            Promise.all(
+                cacheNames.map(cacheName => {
                     if (!cacheWhitelist.includes(cacheName)) {
                         return caches.delete(cacheName);
                     }
                 })
-            );
-        }).then(() => self.clients.claim())
+            )
+        ).then(() => self.clients.claim())
+    );
+});
+
+self.addEventListener('fetch', event => {
+    if (event.request.mode === 'navigate') {
+        event.respondWith((async () => {
+            try {
+                const networkResponse = await fetch(event.request);
+                if (networkResponse && networkResponse.status === 200) {
+                    const cache = await caches.open(CACHE_NAME);
+                    cache.put(event.request, networkResponse.clone());
+                }
+                return networkResponse;
+            } catch (error) {
+                return caches.match(event.request);
+            }
+        })());
+        return;
+    }
+
+    event.respondWith(
+        caches.match(event.request).then(response => response || fetch(event.request))
     );
 });

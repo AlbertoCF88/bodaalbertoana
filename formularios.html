@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Alberto y Ana</title>
+    <meta name="theme-color" content="#707f62">
+
+    <link rel="icon" type="image/ico" href="img/icono.ico" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!--mi CSS-->
+    <link rel="stylesheet" href="css.css?v=1.1">
+</head>
+
+<body class="text-white bg-white" id="inicio">
+
+    <header class="container px-0">
+        <nav class="navbar p-3">
+            <div class="container-fluid d-flex flex-column flex-xl-row justify-content-center align-items-center gap-3">
+                <a class="navbar-brand  text-white fw-bold verde" href="./index.html">
+                    ¡BIENVENIDOS!
+                </a>
+                <a class="navbar-brand text-white fw-bold verde" aria-current="page" href="./itinerarioboda.html">
+                    BODA
+                </a>
+                <a class="navbar-brand text-white fw-bold dorado" aria-current="page" href="./formularios.html">
+                    FORMULARIOS
+                </a>
+                <a class="navbar-brand text-white fw-bold verde" aria-current="page" href="./itinerarioresumen.html">
+                    ITINERARIO
+                </a>
+            </div>
+        </nav>
+
+        <div class="card border-0">
+            <img src="./img/besoRT.png" class="card-img rounded-0" alt="foto beso">
+        </div>
+    </header>
+
+    <main class="container px-0 " id="main">
+        <!--  NAVBAR -->
+        <nav class="navbar navbar-light bg-transparent border-bottom border-warning py-3">
+            <div class="container">
+                <button class="navbar-toggler w-100 border-0 text-center p-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fw-bold text-uppercase verde fs-5 nav-link">
+                        <a class="indice dorado">Índice</a>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#asistencia">Asistencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#alergias">Alergias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#transporte">Transporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cinzel-decorative verde fs-5 px-3" href="#musica">Música</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Botón subir al inicio -->
+        <a href="#inicio" class="btn btn-outline-success rounded-circle shadow position-fixed"
+            style="bottom: 10px; right: 10px; width: auto; height: auto; z-index: 1000;">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <!-- asistencia -->
+        <section id="asistencia" class="mt-3">
+            <div class="card rounded-0 border-0 bg-transparent">
+                <div class="card-body px-4 px-md-5">
+                    <h3 class="cinzel dorado text-center">Asitencia</h3>
+                    <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
+                        <p>
+                            <i class="fa-solid fa-clipboard-check pe-2 dorado"></i>
+                            Si lo preferís, no es necesario rellenar el formulario de asistencia. También podéis
+                            confirmarnos vuestra presencia por WhatsApp, en persona o de la manera que os resulte más
+                            cómoda.
+                        </p>
+                        <p>
+                            <a href="https://forms.gle/NxHh5DopE7teWhnKA" target="_blank"
+                                class="text-decoration-none verde">
+                                👉 Completa aquí el formulario de asistencia
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- alergias -->
+        <section id="alergias" class="mt-3">
+            <div class="card rounded-0 border-0 bg-transparent">
+                <div class="card-body px-4 px-md-5">
+                    <h3 class="cinzel dorado text-center">Alergias alimentarias</h3>
+                    <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
+                        <p>
+                            <i class="fa-solid fa-shrimp pe-2 dorado"></i>
+                            Por favor, completad el formulario de alergias alimentarias en el siguiente enlace:
+                        </p>
+                        <p>
+                            <a href="https://forms.gle/TdQoaUZG7LQTddMk6" target="_blank"
+                                class="text-decoration-none verde">
+                                👉 Completa aquí el formulario de alergias alimentarias
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- autobuses -->
+        <section id="transporte" class="mt-3">
+            <div class="card rounded-0 border-0 bg-transparent">
+                <div class="card-body px-4 px-md-5">
+                    <h3 class="cinzel dorado text-center">Transporte</h3>
+                    <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
+                        <p>
+                            <i class="fa-solid fa-bus pe-2 dorado"></i>
+                            Pondremos a vuestra disposición un autobús para facilitaros la asistencia a nuestra boda.
+                        </p>
+                        <p>
+                            (Por confirmar) El recorrido será desde Valencia, pasando por Paterna, hasta Jaraguas. Tras
+                            la ceremonia, el autobús nos llevará al lugar del convite, y al finalizar, regresará a
+                            Jaraguas,
+                            Paterna y posteriormente a Valencia.
+                        </p>
+                        <p>
+                            <a href="https://forms.gle/uQJ8fZ7WTYHzh6AG6" target="_blank"
+                                class="text-decoration-none verde">
+                                👉 Completa aquí el formulario de transporte
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- canciones -->
+        <section id="musica" class="mt-3 mb-5">
+            <div class="card rounded-0 border-0 bg-transparent">
+                <div class="card-body px-4 px-md-5">
+                    <h3 class="cinzel dorado text-center">Música</h3>
+                    <div class="pt-3 mx-auto verde fw-bold cinzel marco verde">
+                        <p>
+                            <i class="fa-solid fa-music pe-2 dorado"></i>
+                            ¡Queremos que la pista de baile esté a reventar!
+                            Cuéntanos qué canciones no pueden faltar para hacer de este día una fiesta inolvidable.
+                        </p>
+                        <p>
+                            <a href="https://forms.gle/qykfwJfyJMABQcX37" target="_blank"
+                                class="text-decoration-none verde">
+                                👉 Completa aquí el formulario y déjanos tu banda sonora perfecta
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 bg-verde">
+        <p class="mb-2">Con cariño, Alberto & Ana ❤️ </p>
+        <div class="d-flex flex-column flex-md-row justify-content-around gap-2">
+            <span>
+                Teléfonos:
+                <a href="tel:+34635507429" class="text-white text-decoration-underline">635 50 74 29</a> /
+                <a href="tel:+34686201512" class="text-white text-decoration-underline">686 20 15 12</a>
+            </span>
+            <span>
+                <a href="mailto: bodaalbertoana3.9.2024@gmail.com" target="_blank" rel="noreferrer"
+                    class="text-white text-decoration-underline">
+                    bodaalbertoana3.9.2025@gmail.com
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script src="js.js"></script>
+</body>
+
+</html>

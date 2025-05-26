@@ -21,30 +21,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <!-- icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!--mi CSS-->
-       <link rel="stylesheet" href="css.css?v=1.1">
+    <link rel="stylesheet" href="css.css?v=1.1">
 </head>
 
-<body class="text-white bg-white">
+<body class="text-white bg-white" id="inicio">
 
     <header class="container px-0">
-        <nav class="navbar navbar-expand-md p-3">
-            <div class="container-fluid justify-content-center gap-4">
-                <a class="navbar-brand text-decoration-underline text-white fw-bold verde" href="./index.html">
+        <nav class="navbar p-3">
+            <div class="container-fluid d-flex flex-column flex-xl-row justify-content-center align-items-center gap-3">
+                <a class="navbar-brand fw-bold dorado" href="./index.html">
                     ¡BIENVENIDOS!
                 </a>
                 <a class="navbar-brand text-white  fw-bold verde" aria-current="page" href="./itinerarioboda.html">
+                    BODA
+                </a>
+                <a class="navbar-brand text-white fw-bold verde" aria-current="page" href="./formularios.html">
+                    FORMULARIOS
+                </a>
+                <a class="navbar-brand text-white fw-bold verde" aria-current="page" href="./itinerarioresumen.html">
                     ITINERARIO
                 </a>
             </div>
         </nav>
 
         <div class="card border-0">
-            <img src="./img/besoRT.png" class="card-img rounded-0" alt="foto beso">
+            <img src="./img/besoRT.png" class="card-img rounded-0 " alt="foto beso">
         </div>
     </header>
 
-    <main class="container px-0 pt-3">
+    <main class="container px-0 pt-3" id="main">
+        <!-- Botón subir al inicio -->
+        <a href="#inicio" class="btn btn-outline-success rounded-circle shadow position-fixed"
+            style="bottom: 10px; right: 10px; width: auto; height: auto; z-index: 1000;">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
         <section class="text-center">
             <div class="card rounded-0 border-0 bg-transparent">
                 <div class="card-body">
@@ -96,7 +108,7 @@
 
     <footer class="bg-dark text-white text-center py-4 bg-verde">
         <p class="mb-2">Con cariño, Alberto & Ana ❤️ </p>
-        <div class="d-flex flex-column flex-md-row justify-content-around gap-2 px-3">
+        <div class="d-flex flex-column flex-md-row justify-content-around gap-2">
             <span>
                 Teléfonos:
                 <a href="tel:+34635507429" class="text-white text-decoration-underline">635 50 74 29</a> /
@@ -115,6 +127,8 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
 
+    <script src="js.js"></script>
+
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js')
@@ -122,6 +136,7 @@
                 .catch(err => console.error('SW fallo', err));
         }
     </script>
+
 </body>
 
 </html>

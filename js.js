@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
 
             setTimeout(() => {
                 document.body.style.overflow = 'auto';
-            }, 1500);
+            }, 500);
         }
         scrolledOnce = true;
     }

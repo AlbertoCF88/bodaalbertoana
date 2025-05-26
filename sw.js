@@ -1,6 +1,5 @@
-const CACHE_NAME = 'boda-v1';
+const CACHE_NAME = 'boda-v3';
 const urlsToCache = [
-    '/',
     '/img/logo_anaSInBorde.png',
     '/img/besoRT.png',
     '/img/fondo.jpg',

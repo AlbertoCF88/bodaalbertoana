@@ -85,3 +85,11 @@ a.indice:hover {
     border-color: #c3ad6f !important;
     color: white !important;
 }
+
+button[aria-expanded="false"] .collapse-icon {
+    display: none;
+}
+
+button[aria-expanded="true"] .expand-icon {
+    display: none;
+}

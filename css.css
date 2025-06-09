@@ -4,7 +4,7 @@ html {
 
 body {
     background-image: url('./img/fondo.jpg');
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -93,4 +93,39 @@ button[aria-expanded="false"] .collapse-icon {
 
 button[aria-expanded="true"] .expand-icon {
     display: none;
+}
+
+#wedding-timer {
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.time-box {
+    color: #c3ad6f;
+    border-radius: 8px;
+    padding: 1rem 0.75rem;
+    min-width: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.time-box .number {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.time-box .label {
+    font-size: 0.75rem;
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.font-small {
+    font-size: x-small;
 }
